@@ -13,6 +13,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "shortid": "^2.2.16",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -58,7 +59,7 @@
     "url": "git+https://github.com/zamesow/goit-react-hw-03-phonebook.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Timur Zamesov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zamesow/goit-react-hw-03-phonebook/issues"
