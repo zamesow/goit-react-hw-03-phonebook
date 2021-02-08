@@ -25,6 +25,7 @@ class App extends Component {
       this.setState({ contacts: parsedContacts });
     }
   }
+
   // запись в localStorage
   componentDidUpdate(prevProps, prevState) {
     if (prevState.contacts !== this.state.contacts) {
