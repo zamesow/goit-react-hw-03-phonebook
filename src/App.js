@@ -60,9 +60,6 @@ class App extends Component {
         ],
       }));
     }
-
-    console.log(data);
-    console.log(contacts);
   };
 
   changeFilter = e => {
@@ -87,17 +84,17 @@ class App extends Component {
     }));
   };
   render() {
-    const { filter, contacts } = this.state;
+    const { filter } = this.state;
 
     return (
       <>
-        <h1 className="mc.title">Phonebook</h1>
+        <h1 className={mc.title}>Phonebook</h1>
         <ContactForm onSubmitProp={this.formSubmitHandler} />
 
-        <h2 className="mc.title">Contacts</h2>
+        <h2 className={mc.title}>Contacts</h2>
         <ContactList
-          contactsProp={this.getVisibleContacts()}
-          onDeleteProp={this.deleteContact}
+          contacts={this.getVisibleContacts()}
+          onDelete={this.deleteContact}
         >
           <Filter value={filter} filterProp={this.changeFilter} />
         </ContactList>
